@@ -1,0 +1,24 @@
+@media(max-width: 740px)  {
+    #nav>li{
+        list-style:none;
+        display: block;
+        position: relative;
+    }
+
+    #header{
+        width: 100%;
+        height: 46px;
+        background-color: black;
+        line-height: 46px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        overflow: hidden;
+    }
+    #header .search-btn{
+        float: right;
+        cursor: pointer;
+        display: none;
+    }
+}

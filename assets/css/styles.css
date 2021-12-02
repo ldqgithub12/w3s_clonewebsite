@@ -38,7 +38,7 @@ html{
 #nav>li>a{
     text-decoration: none;
     color: white;
-    display: inline-block;
+    display: block;
     padding: 0px 24px 0px 24px;
 }
 #nav>li>a:hover{
@@ -70,10 +70,18 @@ ul.subnav>li>a:hover{
 #nav>li:hover ul.subnav{
     display: block;
 }
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn{
     float: right;
     cursor: pointer;
 }
+#header .mobile-menu-btn,
 #header .search-icon{
     color: white;
     font-size: 20px;
@@ -82,6 +90,10 @@ ul.subnav>li>a:hover{
 }
 #header .search-btn:hover{
     background-color:#f44336;
+}
+#header .mobile-menu-btn:hover{
+    background-color:#ccc;
+    color: black;
 }
 #slider{
     position: relative;
@@ -139,7 +151,7 @@ ul.subnav>li>a:hover{
     width: 100%;
 }
 #content .member{
-    width: 30% !important;
+    width: 30%;
     float: left;
 }
 .tour-section{
@@ -217,6 +229,7 @@ ul.subnav>li>a:hover{
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    text-align: center;
 }
 #footer{
     text-align: center;
